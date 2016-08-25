@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Decorators Example</title>
+    <link rel="stylesheet" href="node_modules/todomvc-common/base.css">
+		<link rel="stylesheet" href="node_modules/todomvc-app-css/index.css">
+  </head>
+  <body>
+    <button onclick="es5TodoApp()" class="btn">ES5</button>
+    <button onclick="es6TodoApp()" class="btn">ES6</button>
+    <button onclick="decoratorsTodoApp()" class="btn">Decorators</button>
+    <div id="todoWrapper" class="hidden">
+      <section id="todoapp">
+        <header id="header">
+          <h1>todos</h1>
+          <input id="new-todo" placeholder="What needs to be done?" autofocus>
+        </header>
+        <section id="main">
+          <input id="toggle-all" type="checkbox">
+          <label for="toggle-all">Mark all as complete</label>
+          <ul id="todo-list"></ul>
+        </section>
+        <footer id="footer"></footer>
+      </section>
+      <footer id="info">
+        <p>Double-click to edit a todo</p>
+        <p>Written by <a href="https://github.com/tastejs/todomvc">TasteJS</a></p>
+        <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+      </footer>
+    </div>
+    <script src="0.0.0-SNAPSHOT/src/app.js"></script>
+  </body>
+</html>

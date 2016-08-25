@@ -1,0 +1,49 @@
+{
+  "name": "presentation-decorators-examples",
+  "title": "Decorators",
+  "main": "js/app.js",
+  "description": "Decorator Examples",
+  "version": "0.0.0-SNAPSHOT",
+  "repository": "nmackey/presentation-decorators-examples",
+  "dependencies": {
+    "backbone": "1.3.3",
+    "backbone-validation": "0.11.5",
+    "backbone.modelbinder": "1.1.0",
+    "backbone.select": "1.5.4",
+    "backbone.localstorage": "^1.1.16",
+    "bootstrap": "3.3.7",
+    "core-decorators": "0.12.3",
+    "jquery": "3.1.0",
+    "moment": "2.13.0",
+    "todomvc-app-css": "^1.0.0",
+    "todomvc-common": "^1.0.1",
+    "underscore": "1.8.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-eslint": "^6.1.2",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-class-properties": "^6.9.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-object-assign": "^6.8.0",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-polyfill": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "css-loader": "^0.23.1",
+    "eslint": "~3.2.0",
+    "exports-loader": "^0.6.3",
+    "imports-loader": "^0.6.5",
+    "json-loader": "^0.5.4",
+    "path": "^0.12.7",
+    "progress-bar-webpack-plugin": "^1.8.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-stream": "^3.2.0"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --inline",
+    "dist": "webpack"
+  }
+}

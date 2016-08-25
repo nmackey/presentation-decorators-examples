@@ -1,0 +1,50 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint-config-airbnb-base",
+    "eslint-config-airbnb-base/rules/strict"
+  ],
+
+  "rules": {
+    // Ignore module resolutions
+    "import/no-unresolved": 0,
+
+    // disallow non-import statements appearing before import statements
+    "import/imports-first": [0],
+
+    // Forbid the use of extraneous packages - disabling because this rule doesn't
+    // work very well
+    "import/no-extraneous-dependencies": [0],
+
+    // allow trailing commas in object literals
+    "comma-dangle": [ 2, "never" ],
+
+    // specify the maximum length of a line in your program
+    "max-len": [ 1, 200, 2, {
+      "ignoreUrls": true,
+      "ignoreComments": false
+    } ],
+
+    // enforce newline at the end of file, with no multiple empty lines
+    "eol-last": 1,
+
+    // allow reassignment of function parameters
+    // allow parameter object manipulation
+    "no-param-reassign": 0,
+
+    // allow dangling underscores in variable names
+    "no-underscore-dangle": 0
+  },
+
+  "globals": {
+    "es5Todo": true,
+    "es6Todo": true,
+    "decoratorTodo": true,
+    "$": true
+  },
+
+  "env": {
+    "amd": true,
+    "browser": true
+  }
+}
